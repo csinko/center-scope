@@ -30,6 +30,19 @@ ser.write(bytearray([253,254,17,1,248]))
 time.sleep(.3)
 #ser.write(bytearray([253,254,35,4,20,188,199]))
 time.sleep(.05)
-ser.write(bytearray([253,254,35,2,0,1,131]))
+
+## LEFT COMMAND
+#ser.write(bytearray([253,254,19,2,255,255,45]))
+
+## DOWN COMMAND
+ser.write(bytearray([253,254,35,2,255,255,160]))
+
+
+## RIGHT COMMAND
+#ser.write(bytearray([253,254,19,2,0,1,42]))
+
+
+## UP COMMAND
+#ser.write(bytearray([253,254,35,2,0,1,131]))
 print("Done")
 

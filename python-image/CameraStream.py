@@ -16,7 +16,10 @@ WIDTH_SEC = 26.9
 HEIHT_SEC = 20.2
 STEP = 10
 THRESHOLD = 10
-cap = cv2.VideoCapture(0) # 0=back camera; 1=front camera; 2=webcam
+cap = cv2.VideoCapture() # 0=back camera; 1=front camera; 2=webcam
+
+cap.open(2)
+print("Camera Opened")
 ##################################################
 
 ### FUNCTIONS ###

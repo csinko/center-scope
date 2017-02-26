@@ -41,8 +41,15 @@ time.sleep(.05)
 ## RIGHT COMMAND
 #ser.write(bytearray([253,254,19,2,0,1,42]))
 
-
 ## UP COMMAND
 #ser.write(bytearray([253,254,35,2,0,1,131]))
-print("Done")
 
+
+time.sleep(2)
+#Up/Down Stop Command
+#ser.write(bytearray([253,254,35,2,0,0,132]))
+
+#Left/Right Stop Command
+#ser.write(bytearray([253,254,19,2,0,0,45]))
+
+print("Stopped")

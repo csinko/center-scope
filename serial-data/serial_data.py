@@ -32,7 +32,7 @@ time.sleep(.3)
 time.sleep(.05)
 
 ## LEFT COMMAND
-#ser.write(bytearray([]))
+#ser.write(bytearray([253,254,19,2,255,255,9]))
 
 ## DOWN COMMAND
 #ser.write(bytearray([253,254,35,2,255,255,160]))
